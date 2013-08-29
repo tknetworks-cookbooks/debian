@@ -20,3 +20,8 @@ default['debian']['arch'] = case node['kernel']['machine']
                               node['kernel']['machine']
                             end
 default['debian']['deb_archives'] = '/var/cache/apt/archives'
+
+# Git should be installed for git scm resource
+default['debian']['base_packages'] = %w{
+  git
+}

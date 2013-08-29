@@ -13,3 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+node['debian']['base_packages'].each do |pkg|
+  package pkg do
+    action :install
+  end
+end
