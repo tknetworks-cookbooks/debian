@@ -13,5 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-default['debian']['cronapt']['mailon'] = 'output'
+default['debian']['cronapt']['mailon'] = 'upgrade'
 default['debian']['cronapt']['mailto'] = 'root'
